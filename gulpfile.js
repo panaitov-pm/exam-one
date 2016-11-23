@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var csso = require('gulp-csso');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
+//var sourcemaps = require('gulp-sourcemaps');
 /*var concat = require('gulp-concat');*/
 
 var paths = {
@@ -19,12 +19,12 @@ gulp.task('sass', function() {
         /*.pipe( concat('all.css') )
         .pipe(cleancss())
         .pipe(rename('style.min.css'))*/
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe( sass( {
 			outputStyle: 'expanded'/*'compressed'*/} ) )
 		.pipe( autoprefixer( ['last 15 version', '>1%', 'ie 9'], {cascade: true} ) )
 		.pipe(rename('style.css'))
-        .pipe(sourcemaps.write(paths.map))
+        //.pipe(sourcemaps.write(paths.map))
         .pipe(gulp.dest(paths.css));
 });
 

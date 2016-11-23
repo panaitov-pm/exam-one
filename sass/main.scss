@@ -394,8 +394,8 @@ header {
 		color: $white-color;
 		
 		&--big {
+			display: inline-block;
 			max-width: 100%;
-			height: auto;
 			resize: none;
 			-ms-overflow-y: hidden;
 			    overflow-y: hidden;

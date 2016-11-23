@@ -479,8 +479,8 @@ header {
 }
 
 .contact-form__field--big {
+  display: inline-block;
   max-width: 100%;
-  height: auto;
   resize: none;
   -ms-overflow-y: hidden;
   overflow-y: hidden;
@@ -504,5 +504,3 @@ header {
       -ms-transform: translateY(3px);
           transform: translateY(3px);
 }
-
-/*# sourceMappingURL=c:/OpenServer/domains/beetroot.loc/lesson-00/exam-one/map/style.css.map */
